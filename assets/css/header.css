@@ -1,0 +1,311 @@
+.header__top{
+    background-color: #001327;
+    height: 4rem;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    
+}
+.header__top-head div{
+    padding: 10px 18px;
+    margin: 0 2px;
+    cursor: pointer;
+
+}
+.header__top-title:hover{
+    color: var(--main-color);
+}
+.header-layer1{
+    position: relative;
+}
+
+.header__top-head--language{
+    display: none;
+    width: 150px;
+    height: 110px;
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 30px;
+    left: 16px;
+    background-color: var(--white-color);
+    z-index: 9;
+}
+.header__top-head--item{
+    color: var(--black-color);
+    width: 100%;
+}
+.header__top-head--item img{
+    width: 18px;
+    height: 12px;
+    margin: 0 4px;
+}
+.header__mid{
+    user-select: none;
+    width: 100%;
+    height: 9.5rem;
+    background-color: var(--white-color);
+    transition: all 0.3s ease;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.header__mid div:first-child{
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-color);
+}
+.header__mid img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 6px;
+}
+
+.header__mid nav{
+    width: 100%;
+    height: 100%;
+    padding: 17px 0;
+    background-color: var(--white-color);
+}
+.header__mid .logo{
+    font-size: 3.6rem;
+    font-weight: 600;
+    color: var(--black-color);
+    user-select: none;
+}
+
+.header__mid button i{
+    font-size: 2.4rem;
+    color: var(--main-color);
+}
+.header__mid .navbar-toggler {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.header__mid li a{
+    font-size: 1.4rem;
+    font-family: "roboto", sans-serif;
+    color: var(--black-color);
+    font-weight: 600;
+    margin: 0 1px;
+}
+.header__mid .nav-item{
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    background-color: var(--white-color);
+}
+
+.header__mid .nav-link:hover{
+    color: var(--main-color);
+}
+
+.header__menu-li{
+    width: 20rem;
+    top: 40px;
+}
+/* menu*/
+.menu-second{
+    display: none;
+    position: absolute;
+    background-color: var(--white-color);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-left: 1px solid var(--main-color);
+    z-index: 2;
+}
+.menu-second-li{
+    padding: 0 15px;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.menu-second-item:hover,
+.menu-second-li:hover{
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+.menu-second-item{
+    text-decoration: none;
+    display: block;
+    line-height: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color-2);
+}
+
+/* menu */
+
+
+.header__account,
+.header__heart,
+.header__shoping-cart {
+    position: relative;
+    cursor: pointer;
+}
+
+.header__mid-right div:hover{
+    color: var(--main-color);
+
+}
+.header__account i,
+.header__heart i,
+.header__shoping-cart i{
+    font-size: 2.4rem;
+    padding: 1.2rem;
+    margin: 0 1px;
+}
+.header__account-btn{
+    background-color: var(--white-color);
+    position: absolute;
+    display: none;
+    box-shadow: -1px -1px 1px 0 var(--border-color);
+}
+.header__account-btn span{
+    width: 16rem;
+    height: 4.6rem;
+    color: var(--black-color);
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 6px;
+}
+.header__account-btn a{
+    text-decoration: none;
+    color: var(--black-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+}
+.header__account-btn a:hover{
+    color: var(--main-color);
+}
+.header__number-hv:hover .header__number{
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+.header__number{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    top: 4px;
+    right: 4px;
+    background-color: var(--main-color);
+    line-height: 18px;
+    text-align: center;
+    font-size: 1rem;
+}
+.header__number-mb{
+    background-color: var(--white-color);
+}
+.header__bottom{
+    user-select: none;
+    width: 100%;
+    height: 5rem;
+    background-color: var(--main-color);
+}
+.header__bottom-bars{
+    position: relative;
+    cursor: pointer;
+}
+.header__bottom-bars i:first-child{
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+    line-height: 50px;
+}
+.header__bottom-bars-li{
+    width: 32rem;
+}
+.header__bottom-bars-li a{
+    font-size: 1.4rem;
+}
+
+.header__bottom .header__bottom-bars i{
+    font-size: 2.4rem;
+    color: var(--black-color);
+}
+
+.header__bottom-search{
+    height: 40px;
+    background-color: var(--black-color);
+}
+.header__bottom-phone{
+    font-size: 1.4rem;
+    color: var(--black-color);
+    font-weight: 600;
+    font-family: 'roboto', sans-serif;
+}
+.header__bottom .header__bottom-content{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    line-height: 50px;
+    background-color: var(--main-color);
+}
+.header__bottom-search-category{
+    height: 100%;
+    width: 18rem;
+    color: #666666;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 40px;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white-color);
+    cursor: pointer;
+    position: relative;
+}
+
+.header__bottom-category-li{
+    width: 18rem;
+    text-align: left;
+}
+.header__bottom-category-li li a{
+    color: #666666;
+}
+.header__bottom-search-input{
+    width: 35.3rem;
+    height: 100%;
+    line-height: 1;
+}
+.header__bottom-search-input input{
+    height: 100%;
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 0 6px;
+    border: none;
+    outline: none;
+    font-family: 'roboto', sans-serif;
+}
+.header__bottom-search-icon{
+    margin: auto;
+    width: 62px;
+    height: 100%;
+}
+.header__bottom-search-icon i{
+    width: 100%;
+    font-size: 2.2rem;
+    padding: 7px 20px;
+    color: var(--white-color);
+    cursor: pointer;
+}
+@media (max-width: 912px) { /* 768px là kích thước của iPad mini */
+    .container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin: 0 auto;
+        width: 100% !important;
+    }
+    .header__mid ul{
+        width: 50%;
+        float: right;
+        border-left: 1px solid var(--main-color);
+    }
+    .header__mid li{
+        border-bottom: 1px solid var(--border-color);
+    }
+}
+

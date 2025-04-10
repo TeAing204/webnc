@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Báo cáo - Thống kê</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      padding: 20px;
+      background-color: #f8f9fa;
+    }
+    .section {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h4 class="mb-4">Quản lý Nhà xuất bản</h4>
+      
+        <form class="row g-3">
+          <div class="col-md-3">
+            <label for="maNXB" class="form-label">Mã NXB</label>
+            <input type="text" class="form-control" id="maNXB" placeholder="VD: NXB01">
+          </div>
+          <div class="col-md-5">
+            <label for="tenNXB" class="form-label">Tên NXB</label>
+            <input type="text" class="form-control" id="tenNXB" placeholder="VD: Nhà xuất bản Trẻ">
+          </div>
+          <div class="col-md-4">
+            <label for="sdtNXB" class="form-label">Số điện thoại</label>
+            <input type="text" class="form-control" id="sdtNXB" placeholder="VD: 02812345678">
+          </div>
+          <div class="col-md-6">
+            <label for="diaChiNXB" class="form-label">Địa chỉ</label>
+            <input type="text" class="form-control" id="diaChiNXB" placeholder="VD: 123 Nguyễn Văn Cừ, Q5, TP.HCM">
+          </div>
+      
+          <div class="col-12">
+            <button type="submit" class="btn btn-success me-2">Thêm</button>
+            <button type="button" class="btn btn-primary me-2">Sửa</button>
+            <button type="button" class="btn btn-danger">Xoá</button>
+          </div>
+        </form>
+      
+        <hr class="my-4">
+      
+        <h5 class="mb-3">Danh sách Nhà xuất bản</h5>
+        <div class="table-responsive">
+          <table class="table table-bordered text-center align-middle">
+            <thead class="table-light">
+              <tr>
+                <th>Mã NXB</th>
+                <th>Tên NXB</th>
+                <th>Địa chỉ</th>
+                <th>SĐT</th>
+                <th>Hành động</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>NXB01</td>
+                <td>NXB Giáo Dục</td>
+                <td>101 Trần Hưng Đạo, Hà Nội</td>
+                <td>0241234567</td>
+                <td>
+                  <button class="btn btn-sm btn-warning me-1">Chọn</button>
+                  <button class="btn btn-sm btn-danger">Xoá</button>
+                </td>
+              </tr>
+              <tr>
+                <td>NXB02</td>
+                <td>NXB Kim Đồng</td>
+                <td>43 Lê Thánh Tôn, Q1, TP.HCM</td>
+                <td>0288888888</td>
+                <td>
+                  <button class="btn btn-sm btn-warning me-1">Chọn</button>
+                  <button class="btn btn-sm btn-danger">Xoá</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+
+<script>
+  // Danh sách mượn (giả lập – sẽ đồng bộ nếu dùng chung với phần mượn-trả)
+  const danhSachMuon = [
+    { maThe: "DG01", maSach: "S01", tenLoai: "Văn học", ngayMuon: "2025-03-10", soNgay: 7, daTra: false },
+    { maThe: "DG02", maSach: "S02", tenLoai: "Khoa học", ngayMuon: "2025-03-20", soNgay: 5, daTra: true },
+    { maThe: "DG01", maSach: "S01", tenLoai: "Văn học", ngayMuon: "2025-03-25", soNgay: 7, daTra: false },
+    { maThe: "DG03", maSach: "S03", tenLoai: "Kỹ thuật", ngayMuon: "2025-03-30", soNgay: 3, daTra: true },
+    { maThe: "DG04", maSach: "S04", tenLoai: "Khoa học", ngayMuon: "2025-03-15", soNgay: 10, daTra: false }
+  ];
+
+  function baoCaoQuaHan() {
+    const ul = document.getElementById("dsQuaHan");
+    ul.innerHTML = "";
+    const homNay = new Date();
+
+    const quaHan = danhSachMuon.filter(pm => {
+      const ngayMuon = new Date(pm.ngayMuon);
+      const han = new Date(ngayMuon);
+      han.setDate(han.getDate() + pm.soNgay);
+      return !pm.daTra && homNay > han;
+    });
+
+    if (quaHan.length === 0) {
+      ul.innerHTML = "<li class='list-group-item'>Không có phiếu nào quá hạn.</li>";
+      return;
+    }
+
+    quaHan.forEach(pm => {
+      const ngayMuon = new Date(pm.ngayMuon);
+      const han = new Date(ngayMuon);
+      han.setDate(han.getDate() + pm.soNgay);
+      ul.innerHTML += `<li class="list-group-item">
+        Độc giả: ${pm.maThe} - Mã sách: ${pm.maSach} | Hết hạn: ${han.toLocaleDateString()}
+      </li>`;
+    });
+  }
+
+  function baoCaoThang() {
+    const ul = document.getElementById("dsThongKe");
+    ul.innerHTML = "";
+
+    const thangHienTai = new Date().getMonth(); // 0–11
+    const muonTrongThang = danhSachMuon.filter(pm => {
+      const thang = new Date(pm.ngayMuon).getMonth();
+      return thang === thangHienTai;
+    });
+
+    const tongSach = muonTrongThang.length;
+
+    const loaiMap = {};
+    const docGiaSet = new Set();
+    muonTrongThang.forEach(pm => {
+      loaiMap[pm.tenLoai] = (loaiMap[pm.tenLoai] || 0) + 1;
+      docGiaSet.add(pm.maThe);
+    });
+
+    const loaiYeuThich = Object.entries(loaiMap).sort((a, b) => b[1] - a[1])[0];
+
+    ul.innerHTML += `<li class="list-group-item">Tổng sách đã mượn trong tháng: ${tongSach}</li>`;
+    ul.innerHTML += `<li class="list-group-item">Loại sách yêu thích: ${loaiYeuThich ? loaiYeuThich[0] + " (" + loaiYeuThich[1] + " lượt)" : "Không có dữ liệu"}</li>`;
+    ul.innerHTML += `<li class="list-group-item">Số độc giả đã mượn: ${docGiaSet.size}</li>`;
+  }
+</script>
+
+</body>
+</html>

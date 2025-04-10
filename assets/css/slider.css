@@ -1,0 +1,131 @@
+/* carousel */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 4%;
+}
+
+.carousel-control-prev {
+  left: 0; /* Đẩy nút prev sát mép trái */
+}
+
+.carousel-control-next {
+  right: 0; /* Đẩy nút next sát mép phải */
+}
+.carousel-caption{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+.carousel-caption .container {
+    text-align: left;
+}
+
+.line1{
+    font-size: 3rem;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.line1::before{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    bottom: 0;
+    background-color: var(--main-color);
+}
+.line2, .line3{
+    font-size: 8rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.carousel-caption .btn,
+.content3 .btn{
+    margin-top: 30px;
+    font-size: 1.6rem;
+    background-color: var(--main-color);
+    font-family: 'Roboto', sans-serif;
+    color: var(--white-color);
+    padding: 6px 16px;
+    font-weight: 600;
+    border-radius: 0;
+    transition: all 0.5s ease;
+}
+
+.carousel-caption .line,
+.carousel-caption button {
+    opacity: 0; 
+    transform: translateY(70px); 
+    transition: transform 1s ease-out, opacity 1s ease-out; 
+}
+.carousel-caption .line3{
+    opacity: 0; 
+    transform: translate(-70px, 0px);
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out; 
+}
+.carousel-caption button:hover,
+.content3 .btn:hover{
+    background-color: var(--black-color);
+    border: 1px solid var(--main-color);
+}
+
+@media (max-width: 992px) {
+    .line1 {
+        font-size: 4vw;
+    }
+
+    .line2, .line3 {
+        font-size: 6vw;
+    }
+    .carousel-caption .btn {
+        font-size: 1.4rem;
+        padding: 4px 12px;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 7%;
+    }
+}
+
+@media (max-width: 768px) {
+    .line1 {
+        font-size: 4vw;
+    }
+
+    .line2, .line3 {
+        font-size: 5vw;
+    }
+    .carousel-caption .btn {
+        font-size: 1.2rem;
+        padding: 4px 10px;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 10%;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .line1 {
+        font-size: 3vw;
+    }
+
+    .line2, .line3 {
+        font-size: 4.5vw;
+    }
+
+    .carousel-caption .btn {
+        font-size: 1rem;
+        padding: 3px 8px;
+    }
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    background-color: #ffffff4d;
+    padding: 36px 20px;
+}
