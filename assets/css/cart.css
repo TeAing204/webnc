@@ -1,0 +1,70 @@
+
+.content__cart{
+    background-color: var(--white-color);
+    padding: 50px 0 240px;
+}
+.content__cart th{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.content__cart td,
+.content__cart td a{
+    font-size: 1.4rem;
+    color: #555555;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+.content__cart td button{
+    border: none;
+    font-size: 3rem;
+    outline: none;
+    background-color: var(--white-color);
+    color: #555555;
+    display: flex;
+    align-items: center;
+}
+.cart__coupon input, button{
+    height: 40px;
+    border: none;
+    background-color: #f2f2f2;
+    outline: none;
+    padding: 0 10px;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.cart__coupon button{
+    background-color: var(--main-color);
+    color: var(--white-color);
+    transition: all 0.4s ease;
+}
+.cart__totals{
+    float: right;
+    width: 400px;
+    background-color: #f2f2f2;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    border-radius: 4px;
+}
+.cart__total-title{
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+.cart__total-i{
+    border-bottom: 1px solid var(--text-color);
+    padding: 6px 0;
+}
+.cart__total-i span{
+    font-weight: 500;
+}
+.cart__totals button{
+    background-color: var(--main-color);
+    margin-top: 20px;
+    float: right;
+    color: var(--white-color);
+    transition: all 0.4s ease;
+}
+.cart__coupon button:hover,
+.cart__totals button:hover{
+    background-color: var(--black-color);
+}

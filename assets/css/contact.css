@@ -1,0 +1,78 @@
+.content__item-img i{
+    font-size: 4rem;
+    color: var(--main-color);
+}
+.content__item-text{
+    font-family: 'Roboto', sans-serif;
+}
+.content__item-title{
+    font-size: 1.6rem;
+    color: #333333;
+    font-weight: 500;
+}
+.content__item-desc{
+    font-size: 1.4rem;
+    color: var(--text-color-2);
+}
+.content__contact-title{
+    font-size: 2.4rem;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+}
+.content__contact-desc{
+    font-size: 1.6rem;
+    color: var(--text-color-2);
+}
+.content__ct2-input input{
+    width: 100%;
+    height: 40px;
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
+    color: var(--text-color-2);
+    font-size: 1.6rem;
+    padding: 0 10px;
+}
+.content__ct2-textarea textarea{
+    width: 100%;
+    height: 200px;
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
+    color: var(--text-color-2);
+    font-size: 1.6rem;
+    padding: 10px;
+}
+.content__ct2-send button{
+    background-color: var(--main-color);
+    padding: 10px 0;
+    width: 100%;
+    max-width: 200px;
+    color: var(--white-color);
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    transition: all 0.4s ease;
+}
+.content__ct2-send button:hover{
+    background-color: var(--black-color);
+}
+.content__contact-faq{
+    font-family: 'Oswald', sans-serif;
+    color: var(--main-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.content__contact-faq_li a{
+    display: block;
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 1.4rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    padding: 15px 0;
+    border-top: 1px solid var(--border-color);
+    transition: all 0.4s ease;
+}
+.content__contact-faq_li a:hover{
+    color: var(--main-color);
+}

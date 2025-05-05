@@ -1,7 +1,7 @@
 /* carousel */
 .carousel-control-prev,
 .carousel-control-next {
-  width: 4%;
+  width: 8%;
 }
 
 .carousel-control-prev {
@@ -111,8 +111,14 @@
 }
 
 @media (max-width: 576px) {
+    .line{
+        margin: 0;
+        padding: 6px 0;
+    }
     .line1 {
         font-size: 3vw;
+        padding-top: 16px;
+        margin-bottom: 4px;
     }
 
     .line2, .line3 {

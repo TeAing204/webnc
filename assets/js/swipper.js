@@ -43,7 +43,15 @@ const mainSwiper = new Swiper('.main-swiper', {
   },
 });
 
-// 
+$('.products-detail__prev').click(function () {
+  mainSwiper.slidePrev();
+});
+
+$('.products-detail__next').click(function () {
+  mainSwiper.slideNext();
+});
+
+// Phần chọn lọc sản phẩm theo giá min max 
 const slider = document.getElementById('price-slider');
     const minPrice = document.getElementById('min-price');
     const maxPrice = document.getElementById('max-price');

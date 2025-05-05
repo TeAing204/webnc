@@ -133,7 +133,7 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    background: url(/assets/images/content/4k-Porsche-911-4K-Wallpaper.jpeg);
+    background: url(../../assets/images/content/4k-Porsche-911-4K-Wallpaper.jpeg);
     background-repeat: no-repeat;
     background-size: 150%;
     background-position: center;
@@ -274,6 +274,7 @@
     font-weight: 500;
     color: var(--main-color);
     align-items: center;
+    font-family: 'Roboto', sans-serif;
 }
 .product__price-old{
     color: var(--black-color);
@@ -295,6 +296,41 @@
 .add-product__btn:hover{
     background-color: var(--black-color);
 }
+/* detail */
+.products__show-detail{
+    display: none;
+}
+.products__show-detail .content-popular__item-img{
+    position: relative;
+}
+.products__show-detail .product-view{
+    top: -40px;
+}
+.products__show-detail .product__price{
+    justify-content: left;
+}
+.products__show-detail .product__price-new{
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+.products__show-detail .product__title{
+    font-size: 2.6rem;
+    display: block;
+    text-align: left;
+    margin-top: 0;
+}
+.products__show-detail .product__evaluate-grid{
+    text-align: left;
+}
+.products__show-detail .product__desc{
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color-2);
+    margin: 10px 0;
+    text-align: left;
+}
+
+
 
 
 /* content popular */

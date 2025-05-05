@@ -9,4 +9,16 @@ $(document).ready(function () {
         $headerMid.removeClass('fixed');
       }
     });
+
+    //Giỏ hàng start
+    $('.header__shoping-cart').click(function(){
+      $('.cart-sidebar').addClass('active');
+      $('.overlay').addClass('active');
+    });
+    $('.cart-close, .overlay').click(function(){
+      $('.cart-sidebar').removeClass('active');
+      $('.overlay').removeClass('active');
+    });
+    //Giỏ hàng end
+
   });

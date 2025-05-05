@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chi tiết sản phẩm</title>
+    <link rel="icon" href="assets/images/header/logo.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/header.css">
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/content.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/shop.css">
+    <link rel="stylesheet" href="assets/css/login_register.css">
     <link rel="stylesheet" href="assets/fonts/css/all.min.css">
     <link rel="stylesheet" href="assets/css/product-detail.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -77,10 +79,10 @@
             </div>
         </div>
     </div>
-    <div class="header__mid">
+    <div class="header__mid px-3">
         <div class="container p-0">
             <nav class="navbar navbar-expand-lg">
-                <a class="logo navbar-brand" href="#">
+                <a class="logo navbar-brand" href="index.html">
                     <img src="assets/images/header/logo.jpg" alt="">
                     <span>RIPARA</span>
                 </a>
@@ -90,21 +92,21 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                        <a class="nav-link px-4 py-0" href="#">
+                        <a class="nav-link px-4 py-0" href="index.html">
                             TRANG CHỦ
                         </a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link px-4 py-0" href="#">
+                        <a class="nav-link px-4 py-0" href="shop.html">
                             CỬA HÀNG
                             <i class="fa-solid fa-caret-down"></i>
                             <ul class="header__menu-li menu-second">
-                                <li class="menu-second-li"><a class="menu-second-item" href="#">Blog classic</a></li>
-                                <li class="menu-second-li"><a class="menu-second-item" href="#">Blog classic</a></li>
-                                <li class="menu-second-li"><a class="menu-second-item" href="#">Blog classic</a></li>
-                                <li class="menu-second-li"><a class="menu-second-item" href="#">Blog classic</a></li>
-                                <li class="menu-second-li"><a class="menu-second-item" href="#">Blog classic</a></li>
-                                <li class="menu-second-li"><a class="menu-second-item" href="#">Blog classic</a></li>
+                                <li class="menu-second-li"><a class="menu-second-item" href="shop.html">Đèn xe</a></li>
+                                <li class="menu-second-li"><a class="menu-second-item" href="shop.html">Thân xe</a></li>
+                                <li class="menu-second-li"><a class="menu-second-item" href="shop.html">Bánh xe</a></li>
+                                <li class="menu-second-li"><a class="menu-second-item" href="shop.html">Đầu nối</a></li>
+                                <li class="menu-second-li"><a class="menu-second-item" href="shop.html">Động cơ</a></li>
+                                <li class="menu-second-li"><a class="menu-second-item" href="shop.html">Phụ tùng</a></li>
                             </ul>
                         </a>
                         </li>
@@ -137,10 +139,10 @@
                         </a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link px-4 py-0" href="#">ABOUT US</a>
+                        <a class="nav-link px-4 py-0" href="info.html">ABOUT US</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link px-4 py-0" href="#">CONTACT US</a>
+                        <a class="nav-link px-4 py-0" href="contact.html">CONTACT US</a>
                         </li>    
                     </ul>
                     <div class="header__mid-right d-none d-lg-flex d-xl-flex d-xxl-flex ms-auto">
@@ -148,8 +150,8 @@
                             <i class="fa-solid fa-user"></i>
                             <div class="header__account-btn ">
                                 <span>
-                                    <a href="#">Đăng nhập</a> /
-                                    <a href="#">Đăng ký</a>
+                                    <a href="#" class="header__login">Đăng nhập</a> /
+                                    <a href="#" class="header__register">Đăng ký</a>
                                 </span>
                             </div>
                         </div>
@@ -170,7 +172,7 @@
             </nav>
         </div>
     </div>
-    <div class="header__bottom">
+    <div class="header__bottom px-3">
         <div class="container">
             <form class="header__bottom-content">
                 <div class="header__bottom-bars me-auto">
@@ -250,13 +252,19 @@
             </div>
         </div>
         
-        <div class="content__products">
+        <div class="content__products pb-4">
             <div class="container">
                 <div class="row g-5 mx-2 my-1">
                     <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-12">
                         <div class="row g-5">
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-12">
                                 <div class="products-detail__img">
+                                    <div class="products-detail__prev">
+                                        <i class="fa-solid fa-chevron-left"></i>
+                                    </div>
+                                    <div class="products-detail__next">
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </div>
                                     <!-- phần slide show ảnh -->
                                     <div class="swiper main-swiper zoom-container">
                                         <div class="swiper-wrapper">
@@ -275,7 +283,6 @@
                                           <div class="swiper-slide"><img src="assets/images/features/product-8-1-400x400.jpg" alt="Thumb 4" /></div>
                                         </div>
                                     </div>
-                                    
                                 </div>
                             </div>
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-12">
@@ -293,9 +300,10 @@
                                     <div class="products-detail__available my-2">Tình trạng: <span>có sẵn</span></div>
                                     <div class="products-detail__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Helen Do consect adipiscing elit annabell</div>
                                     <div class="products-detail__add d-flex align-items-center">
-                                        <div class="products-detail__add-btn px-4">
-                                            <i class="fa-solid fa-basket-shopping"></i>
-                                            THÊM VÀO GIỎ
+                                        <div class="quantity-control d-flex">
+                                            <button class="quantity-btn minus">-</button>
+                                            <input type="text" class="quantity-input" value="1" readonly>
+                                            <button class="quantity-btn plus">+</button>
                                         </div>
                                         <div class="products-detail__add-btn px-4">
                                             <i class="fa-solid fa-basket-shopping"></i>
@@ -327,11 +335,11 @@
                         </div>
                         <div class="products__desc">
                             <div class="products__desc-redirect">
-                                <a href="#" class="me-4 active">MÔ TẢ</a>/
-                                <a href="#" class="mx-4">NHIỀU HƠN</a>/
-                                <a href="#" class="mx-4">REVIEW</a>
+                                <a href="#" class="me-4 active" data-target="#tab-desc">MÔ TẢ</a>/
+                                <a href="#" class="mx-4" data-target="#tab-more">NHIỀU HƠN</a>/
+                                <a href="#" class="mx-4" data-target="#tab-review">REVIEW</a>
                             </div>
-                            <div class="row my-5">
+                            <div id="tab-desc" class="row my-5">
                                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-12">
                                     <div class="products__desc-title my-5">MÔ TẢ</div>
                                     <div class="products__desc-text">
@@ -341,6 +349,48 @@
                                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-12">
                                     <div class="products__desc-img">
                                         <img src="assets/images/features/7up-theme-01-1-400x400.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-more" class="row my-5 d-none">
+                                <div class="col-xl-12">
+                                    <div class="products__desc-title my-5">NHIỀU HƠN</div>
+                                    <table>
+                                        <tr>
+                                            <th>Màu sắc</th>
+                                            <td>Xanh ngọc, đỏ đậm</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Kích thước</th>
+                                            <td>Lớn, vừa, bé</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div id="tab-review" class="row my-5 d-none">
+                                <div class="col-xl-12">
+                                    <div class="products__desc-title mt-5">HÃY LÀ NGƯỜI ĐẦU TIÊN ĐÁNH GIÁ “WHEEL VTS 5654 HORIZONTAL TAB”</div>
+                                    <div class="products__desc-rating my-4">
+                                        <span>Bạn đánh giá</span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="products__your_info">
+                                        <input type="checkbox">
+                                        <span>Lưu tên, email và trang web của tôi trong trình duyệt này cho lần bình luận tiếp theo của tôi.</span>
+                                        <form action="#" class="my-4">
+                                            <div class="products__your_info-container">
+                                                <div class="products__desc-info d-flex justify-content-between">
+                                                    <input type="text" placeholder="Tên *">
+                                                    <input type="text" placeholder="Email *">
+                                                </div>
+                                                <textarea placeholder="Bình luận"></textarea>
+                                            </div>
+                                            <button>GỬI</button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -638,6 +688,111 @@
             </div>
         </div>
     </div>
+
+
+    <!-- Giỏ hàng -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h4>Giỏ hàng</h4>
+            <button class="cart-close">&times;</button>
+        </div>
+        <div class="cart-content">
+            <ul class="cart-items">
+                <li class="cart-item">
+                    <a href="product-detail.html">
+                        <div class="cart-item-img">
+                            <img src="assets/images/features/7up-theme-01-1-400x400.jpg" alt="Product" />
+                        </div>
+                        <div class="cart-item-info">
+                            <h5 class="cart-item-name">Đèn pha ô tô</h5>
+                            <p class="cart-item-qty">Số lượng: 1</p>
+                            <p class="cart-item-price">500,000₫</p>
+                        </div>
+                        <button class="cart-item-remove">&times;</button>
+                    </a>
+                </li>
+                <li class="cart-item">
+                    <a href="product-detail.html">
+                        <div class="cart-item-img">
+                            <img src="assets/images/features/7up-theme-01-1-400x400.jpg" alt="Product" />
+                        </div>
+                        <div class="cart-item-info">
+                            <h5 class="cart-item-name">Đèn pha ô tô</h5>
+                            <p class="cart-item-qty">Số lượng: 1</p>
+                            <p class="cart-item-price">500,000₫</p>
+                        </div>
+                        <button class="cart-item-remove">&times;</button>
+                    </a>
+                </li>
+            </ul>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span>1,000,000₫</span>
+                </div>
+                <div class="cart-buttons">
+                    <a href="cart.html" class="btn-cart">XEM GIỎ HÀNG</a>
+                    <a href="#" class="btn-checkout">THANH TOÁN</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>  
+    <div class="login">
+        <div class="modal"></div>
+        <div class="container">
+            <div class="box d-flex justify-content-between">
+                <div class="box-cancel"><i class="fa-solid fa-xmark"></i></div>
+                <div class="transfer">
+                    <div class="transfer__title">Hello, Welcome!</div>
+                    <div class="transfer__desc">Chưa có tài khoản</div>
+                    <button>Đăng ký</button>
+                </div>
+                <div class="form">
+                    <div class="form__title">Đăng nhập</div>
+                    <input type="text" class="form__input" placeholder="Tên tài khoản">
+                    <input type="text" class="form__password" placeholder="Mật khẩu">
+                    <a href="#" class="form__forgot">Quên mật khẩu</a>
+                    <button>Đăng nhập</button>
+                    <div class="form__transfer">hoặc đăng nhập với mạng xã hội</div>
+                    <div class="form__social">
+                        <a href="#"><i class="fa-brands fa-google"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="register">
+        <div class="modal"></div>
+        <div class="container">
+            <div class="box d-flex justify-content-between">
+                <div class="form">
+                    <div class="form__title">Đăng ký</div>
+                    <input type="text" placeholder="Tên tài khoản">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Mật khẩu">
+                    <button>Đăng ký</button>
+                    <div class="form__transfer">hoặc đăng nhập với mạng xã hội</div>
+                    <div class="form__social">
+                        <a href="#"><i class="fa-brands fa-google"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="box-cancel"><i class="fa-solid fa-xmark"></i></div>
+                <div class="transfer">
+                    <div class="transfer__title">Chào mừng trở lại</div>
+                    <div class="transfer__desc">Bạn đã có tài khoản</div>
+                    <button>Đăng nhập</button>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <!--  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/nouislider@15.7.0/dist/nouislider.min.js"></script>
@@ -647,5 +802,6 @@
     <script src="assets/js/swipper.js"></script>
     <script src="assets/js/header.js"></script>
     <script src="assets/js/shop.js"></script>
+    <script src="assets/js/login_register.js"></script>
 </body>
 </html>
