@@ -10,15 +10,9 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/reponsive.css">
-    <link rel="stylesheet" href="assets/css/slider.css">
-    <link rel="stylesheet" href="assets/css/content.css">
     <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/shop.css">
     <link rel="stylesheet" href="assets/fonts/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/product-detail.css">
-    <link rel="stylesheet" href="assets/css/cart.css">
-    <link rel="stylesheet" href="assets/css/info.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/login_register.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -75,7 +69,9 @@
                 </div>
                 <div class="header__top-title">
                     <i class="fa-solid fa-truck-fast"></i>
-                    <span class="header__top-right">THEO DÕI ĐƠN HÀNG</span>
+                    <a href="account.html" class="header__top-right">
+                        <span>THEO DÕI ĐƠN HÀNG</span>
+                    </a>
                 </div>
                 <div class="header__top-title">
                     <i class="fa-solid fa-question"></i>
@@ -144,7 +140,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link px-4 py-0" href="#">
-                                PAGES
+                                THÊM
                                 <i class="fa-solid fa-caret-down"></i>
                                 <ul class="header__menu-li menu-second">
                                     <li class="menu-second-li"><a class="menu-second-item" href="#">Blog classic</a>
@@ -163,16 +159,18 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-4 py-0" href="info.html">ABOUT US</a>
+                            <a class="nav-link px-4 py-0" href="info.html">VỀ CHÚNG TÔI</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-4 py-0" href="contact.html">CONTACT US</a>
+                            <a class="nav-link px-4 py-0" href="contact.html">LIÊN HỆ</a>
                         </li>
                     </ul>
                     <div class="header__mid-right d-none d-lg-flex d-xl-flex d-xxl-flex ms-auto">
                         <div class="header__account">
-                            <i class="fa-solid fa-user"></i>
-                            <div class="header__account-btn ">
+                            <a href="account.html">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                            <div class="header__account-btn">
                                 <span>
                                     <a href="#" class="header__login">Đăng nhập</a> /
                                     <a href="#" class="header__register">Đăng ký</a>
@@ -332,10 +330,12 @@
                                 CHỨC NĂNG KẾT HỢP HOÀN HẢO
                             </div>
                             <div class="content__left-desc mt-4">
-                                Mỗi chi tiết đều được chăm chút để mang lại trải nghiệm mượt mà, tiện lợi và tinh tế. Không chỉ hoạt động hiệu quả, sản phẩm còn thể hiện sự hoàn hảo trong cách phục vụ người dùng.
+                                Mỗi chi tiết đều được chăm chút để mang lại trải nghiệm mượt mà, tiện lợi và tinh tế.
+                                Không chỉ hoạt động hiệu quả, sản phẩm còn thể hiện sự hoàn hảo trong cách phục vụ người
+                                dùng.
                             </div>
                         </div>
-                        
+
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="content__ct3-right px-5">
@@ -378,168 +378,168 @@
                 </div>
                 <div class="swiper mySwiper mt-2 px-3">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="content4__blog-item">
-                            <div class="content4__blog-img mx-auto">
-                                <img src="assets/images/members/team-img3-1.jpg" alt="" class="mx-auto">
-                            </div>
-                            <div class="content4__blog-info">
-                                <div class="content4__blog-time">
-                                    Interior Design
+                        <div class="swiper-slide">
+                            <div class="content4__blog-item">
+                                <div class="content4__blog-img mx-auto">
+                                    <img src="assets/images/members/team-img3-1.jpg" alt="" class="mx-auto">
                                 </div>
-                                <a href="#" class="content4__blog-name">
-                                    LEE MIN CHUYEN
-                                </a>
-                                <div class="content4__blog-title">
-                                    Động cơ ô tô chất lượng cao chỉ có tại cửa hàng của chúng tôi
-                                </div>
-                                <div class="content4__blog-footer d-flex justify-content-around align-items-center">
-                                    <div class="content__blog-socal">
-                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-                                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                <div class="content4__blog-info">
+                                    <div class="content4__blog-time">
+                                        Interior Design
+                                    </div>
+                                    <a href="#" class="content4__blog-name">
+                                        LEE MIN CHUYEN
+                                    </a>
+                                    <div class="content4__blog-title">
+                                        Động cơ ô tô chất lượng cao chỉ có tại cửa hàng của chúng tôi
+                                    </div>
+                                    <div class="content4__blog-footer d-flex justify-content-around align-items-center">
+                                        <div class="content__blog-socal">
+                                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="content4__blog-item">
-                            <div class="content4__blog-img mx-auto">
-                                <img src="assets/images/members/team-img4-1.jpg" alt="" class="mx-auto">
-                            </div>
-                            <div class="content4__blog-info">
-                                <div class="content4__blog-time">
-                                    Interior Design
+                        <div class="swiper-slide">
+                            <div class="content4__blog-item">
+                                <div class="content4__blog-img mx-auto">
+                                    <img src="assets/images/members/team-img4-1.jpg" alt="" class="mx-auto">
                                 </div>
-                                <a href="#" class="content4__blog-name">
-                                    LEE MIN CHUYEN
-                                </a>
-                                <div class="content4__blog-title">
-                                    Động cơ ô tô chất lượng cao chỉ có tại cửa hàng của chúng tôi
-                                </div>
-                                <div class="content4__blog-footer d-flex justify-content-around align-items-center">
-                                    <div class="content__blog-socal">
-                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-                                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                <div class="content4__blog-info">
+                                    <div class="content4__blog-time">
+                                        Interior Design
+                                    </div>
+                                    <a href="#" class="content4__blog-name">
+                                        LEE MIN CHUYEN
+                                    </a>
+                                    <div class="content4__blog-title">
+                                        Động cơ ô tô chất lượng cao chỉ có tại cửa hàng của chúng tôi
+                                    </div>
+                                    <div class="content4__blog-footer d-flex justify-content-around align-items-center">
+                                        <div class="content__blog-socal">
+                                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="content4__blog-item">
-                            <div class="content4__blog-img mx-auto">
-                                <img src="assets/images/members/team-img8-1.jpg" alt="" class="mx-auto">
-                            </div>
-                            <div class="content4__blog-info">
-                                <div class="content4__blog-time">
-                                    Interior Design
+                        <div class="swiper-slide">
+                            <div class="content4__blog-item">
+                                <div class="content4__blog-img mx-auto">
+                                    <img src="assets/images/members/team-img8-1.jpg" alt="" class="mx-auto">
                                 </div>
-                                <a href="#" class="content4__blog-name">
-                                    LEE MIN CHUYEN
-                                </a>
-                                <div class="content4__blog-title">
-                                    Động cơ ô tô chất lượng cao chỉ có tại cửa hàng của chúng tôi
-                                </div>
-                                <div class="content4__blog-footer d-flex justify-content-around align-items-center">
-                                    <div class="content__blog-socal">
-                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-                                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                <div class="content4__blog-info">
+                                    <div class="content4__blog-time">
+                                        Interior Design
+                                    </div>
+                                    <a href="#" class="content4__blog-name">
+                                        LEE MIN CHUYEN
+                                    </a>
+                                    <div class="content4__blog-title">
+                                        Động cơ ô tô chất lượng cao chỉ có tại cửa hàng của chúng tôi
+                                    </div>
+                                    <div class="content4__blog-footer d-flex justify-content-around align-items-center">
+                                        <div class="content__blog-socal">
+                                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="content4__blog-item">
-                            <div class="content4__blog-img mx-auto">
-                                <img src="assets/images/members/team-img3-1.jpg" alt="" class="mx-auto">
-                            </div>
-                            <div class="content4__blog-info">
-                                <div class="content4__blog-time">
-                                    Interior Design
+                        <div class="swiper-slide">
+                            <div class="content4__blog-item">
+                                <div class="content4__blog-img mx-auto">
+                                    <img src="assets/images/members/team-img3-1.jpg" alt="" class="mx-auto">
                                 </div>
-                                <a href="#" class="content4__blog-name">
-                                    LEE MIN CHUYEN
-                                </a>
-                                <div class="content4__blog-title">
-                                    Động cơ ô tô chất lượng cao chỉ có tại cửa hàng của chúng tôi
-                                </div>
-                                <div class="content4__blog-footer d-flex justify-content-around align-items-center">
-                                    <div class="content__blog-socal">
-                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-                                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                <div class="content4__blog-info">
+                                    <div class="content4__blog-time">
+                                        Interior Design
+                                    </div>
+                                    <a href="#" class="content4__blog-name">
+                                        LEE MIN CHUYEN
+                                    </a>
+                                    <div class="content4__blog-title">
+                                        Động cơ ô tô chất lượng cao chỉ có tại cửa hàng của chúng tôi
+                                    </div>
+                                    <div class="content4__blog-footer d-flex justify-content-around align-items-center">
+                                        <div class="content__blog-socal">
+                                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="content4__blog-item">
-                            <div class="content4__blog-img mx-auto">
-                                <img src="assets/images/members/team-img3-1.jpg" alt="" class="mx-auto">
-                            </div>
-                            <div class="content4__blog-info">
-                                <div class="content4__blog-time">
-                                    Interior Design
+                        <div class="swiper-slide">
+                            <div class="content4__blog-item">
+                                <div class="content4__blog-img mx-auto">
+                                    <img src="assets/images/members/team-img3-1.jpg" alt="" class="mx-auto">
                                 </div>
-                                <a href="#" class="content4__blog-name">
-                                    LEE MIN CHUYEN
-                                </a>
-                                <div class="content4__blog-title">
-                                    Động cơ ô tô chất lượng cao chỉ có tại cửa hàng của chúng tôi
-                                </div>
-                                <div class="content4__blog-footer d-flex justify-content-around align-items-center">
-                                    <div class="content__blog-socal">
-                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-                                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                <div class="content4__blog-info">
+                                    <div class="content4__blog-time">
+                                        Interior Design
+                                    </div>
+                                    <a href="#" class="content4__blog-name">
+                                        LEE MIN CHUYEN
+                                    </a>
+                                    <div class="content4__blog-title">
+                                        Động cơ ô tô chất lượng cao chỉ có tại cửa hàng của chúng tôi
+                                    </div>
+                                    <div class="content4__blog-footer d-flex justify-content-around align-items-center">
+                                        <div class="content__blog-socal">
+                                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="content4__blog-item">
-                            <div class="content4__blog-img mx-auto">
-                                <img src="assets/images/members/team-img3-1.jpg" alt="" class="mx-auto">
-                            </div>
-                            <div class="content4__blog-info">
-                                <div class="content4__blog-time">
-                                    Interior Design
+                        <div class="swiper-slide">
+                            <div class="content4__blog-item">
+                                <div class="content4__blog-img mx-auto">
+                                    <img src="assets/images/members/team-img3-1.jpg" alt="" class="mx-auto">
                                 </div>
-                                <a href="#" class="content4__blog-name">
-                                    LEE MIN CHUYEN
-                                </a>
-                                <div class="content4__blog-title">
-                                    Động cơ ô tô chất lượng cao chỉ có tại cửa hàng của chúng tôi
-                                </div>
-                                <div class="content4__blog-footer d-flex justify-content-around align-items-center">
-                                    <div class="content__blog-socal">
-                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-                                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                <div class="content4__blog-info">
+                                    <div class="content4__blog-time">
+                                        Interior Design
+                                    </div>
+                                    <a href="#" class="content4__blog-name">
+                                        LEE MIN CHUYEN
+                                    </a>
+                                    <div class="content4__blog-title">
+                                        Động cơ ô tô chất lượng cao chỉ có tại cửa hàng của chúng tôi
+                                    </div>
+                                    <div class="content4__blog-footer d-flex justify-content-around align-items-center">
+                                        <div class="content__blog-socal">
+                                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                      </div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -550,34 +550,39 @@
                 <div class="content__ct4-title px-3 py-5 my-5">VĂN PHÒNG</div>
                 <div class="row p-3 g-3 align-items-stretch">
                     <div class="col-12 col-md-8">
-                      <a href="#" class="d-block h-100">
-                        <img src="assets/images/info_gp/about-us-1-1.png" alt="" class="img-fluid w-100 h-100 object-fit-cover">
-                        <div class="content__ct5-animate"></div>
-                      </a>
+                        <a href="#" class="d-block h-100">
+                            <img src="assets/images/info_gp/about-us-1-1.png" alt=""
+                                class="img-fluid w-100 h-100 object-fit-cover">
+                            <div class="content__ct5-animate"></div>
+                        </a>
                     </div>
                     <div class="col-12 col-md-4">
-                      <div class="d-flex flex-md-column flex-sm-row flex-column gap-3 h-100">
-                        <a href="#" class="d-block h-100 w-100">
-                          <img src="assets/images/info_gp/about-us-2-1.png" alt="" class="img-fluid w-100 h-100 object-fit-cover">
-                          <div class="content__ct5-animate"></div>
-                        </a>
-                        <a href="#" class="d-block h-100 w-100">
-                          <img src="assets/images/info_gp/about-us-3-1.png" alt="" class="img-fluid w-100 h-100 object-fit-cover">
-                          <div class="content__ct5-animate"></div>
-                        </a>
-                      </div>
+                        <div class="d-flex flex-md-column flex-sm-row flex-column gap-3 h-100">
+                            <a href="#" class="d-block h-100 w-100">
+                                <img src="assets/images/info_gp/about-us-2-1.png" alt=""
+                                    class="img-fluid w-100 h-100 object-fit-cover">
+                                <div class="content__ct5-animate"></div>
+                            </a>
+                            <a href="#" class="d-block h-100 w-100">
+                                <img src="assets/images/info_gp/about-us-3-1.png" alt=""
+                                    class="img-fluid w-100 h-100 object-fit-cover">
+                                <div class="content__ct5-animate"></div>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-12 col-md-4">
-                      <a href="#" class="d-block h-100">
-                        <img src="assets/images/info_gp/about-us-4-1.png" alt="" class="img-fluid w-100 h-100 object-fit-cover">
-                        <div class="content__ct5-animate"></div>
-                      </a>
+                        <a href="#" class="d-block h-100">
+                            <img src="assets/images/info_gp/about-us-4-1.png" alt=""
+                                class="img-fluid w-100 h-100 object-fit-cover">
+                            <div class="content__ct5-animate"></div>
+                        </a>
                     </div>
                     <div class="col-12 col-md-8">
-                      <a href="#" class="d-block h-100">
-                        <img src="assets/images/info_gp/about-us-5-1.png" alt="" class="img-fluid w-100 h-100 object-fit-cover">
-                        <div class="content__ct5-animate"></div>
-                      </a>
+                        <a href="#" class="d-block h-100">
+                            <img src="assets/images/info_gp/about-us-5-1.png" alt=""
+                                class="img-fluid w-100 h-100 object-fit-cover">
+                            <div class="content__ct5-animate"></div>
+                        </a>
                     </div>
                 </div>
                 <div class="row px-3 g-5 my-4">
